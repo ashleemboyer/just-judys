@@ -11,7 +11,7 @@ var items = [
     'image': 'img/pumpkin-pancakes.jpg'
   }, {
     'name': 'Judy\'s Plate',
-    'description': 'Two Eggs, any style with hash browns. Choice of ham, bacon, or sasuage, plus 1/2 order of biscuits and gravy.',
+    'description': 'Two Eggs, any style with hash browns. Choice of ham, bacon, or sausage, plus 1/2 order of biscuits and gravy.',
     'price': '$6.45'
   }, {
     'name': 'Judy\'s Honey Baked Ham',
