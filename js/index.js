@@ -19,11 +19,14 @@ var items = [
     'price': '(call)'
   }
 ];
-for (var i = 0; i < items.length; i++) {
-  var container = document.createElement('div');
-  container.style.height = page_height - 200;
-  container.style.margin = '100px 0';
 
+var container = document.createElement('div');
+container.style.position = 'absolute';
+container.style.top = page_height;
+container.style.right = 100;
+container.style.paddingBottom = page_height - 450;
+
+for (var i = 0; i < items.length; i++) {
   var card = document.createElement('div');
   
   var card_width = page_width * 0.45;
@@ -31,12 +34,13 @@ for (var i = 0; i < items.length; i++) {
   var card_padding = 32;
 
   card.style.width = card_width;
-  card.style.position = 'absolute';
-  card.style.top = page_height + (i * (card_height + 300));
-  card.style.right = 100;
+  card.style.position = 'relative';
+  // card.style.top = page_height + (i * (card_height + 300));
+  // card.style.right = 100;
   card.style.backgroundColor = '#ffffffee';
   card.style.boxShadow = '0 0 8px 2px rgba(0, 0, 0, 0.4)'
   card.style.padding = card_padding;
+  card.style.marginBottom = 100;
 
   var item_name = document.createElement('h2');
   item_name.style.width = '80%';
