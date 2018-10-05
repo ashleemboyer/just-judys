@@ -12,11 +12,13 @@ var items = [
   }, {
     'name': 'Judy\'s Plate',
     'description': 'Two Eggs, any style with hash browns. Choice of ham, bacon, or sausage, plus 1/2 order of biscuits and gravy.',
-    'price': '$6.45'
+    'price': '$6.45',
+    'image': 'img/judys-plate.jpeg'
   }, {
     'name': 'Judy\'s Honey Baked Ham',
     'description': 'All Year Round! 1/2 ham or whole ham.',
-    'price': '(call)'
+    'price': '(call)',
+    'image': 'img/honey-baked-ham.jpeg'
   }
 ];
 
@@ -24,7 +26,7 @@ var container = document.createElement('div');
 container.style.position = 'absolute';
 container.style.top = page_height;
 container.style.right = 100;
-container.style.paddingBottom = page_height - 450;
+container.style.paddingBottom = page_height - 850;
 
 for (var i = 0; i < items.length; i++) {
   var card = document.createElement('div');
@@ -35,8 +37,6 @@ for (var i = 0; i < items.length; i++) {
 
   card.style.width = card_width;
   card.style.position = 'relative';
-  // card.style.top = page_height + (i * (card_height + 300));
-  // card.style.right = 100;
   card.style.backgroundColor = '#ffffffee';
   card.style.boxShadow = '0 0 8px 2px rgba(0, 0, 0, 0.4)'
   card.style.padding = card_padding;
